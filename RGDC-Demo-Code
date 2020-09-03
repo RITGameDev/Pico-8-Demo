@@ -52,7 +52,7 @@ function _update()
   player_update()
   player_animate()
 
-		spring()
+		--spring()
 
   --simple camera
   cam_x=player.x-64+(player.w/2)
@@ -243,11 +243,5 @@ end
 
 function spring()
 
-	--foreach(s in springs)
-		if collide_map(player,"down",2) then
-    player.dy-=player.boost+1
-    player.landed=false
-    
-    end
-		--end	
+
 end
